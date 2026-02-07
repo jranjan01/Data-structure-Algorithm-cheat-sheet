@@ -1,6 +1,22 @@
 #include <iostream>
 using namespace std;
 
+/*
+https://www.geeksforgeeks.org/dsa/next-permutation/
+https://leetcode.com/problems/permutations/description/
+
+- Given an array nums of distinct integers, return all the possible permutations.
+
+    Input: nums = [1,2,3]
+    Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
+
+
+- Given an array of integers arr[] representing a permutation , return next lexicographically greater arrangement of the elements in the array arr[] 
+    Input: arr[] = [2, 4, 1, 7, 5, 0]
+    Output: [2, 4, 5, 0, 1, 7]
+*/
+
+
 void nextPermutation(vector<int> &arr){
     
     int n = arr.size();
