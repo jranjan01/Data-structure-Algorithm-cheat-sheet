@@ -1,15 +1,11 @@
 #include <iostream>
 using namespace std;
-
-
 // https://www.geeksforgeeks.org/dsa/trapping-rain-water/
-
 // https://leetcode.com/problems/trapping-rain-water/description/
 
 int maxWater(vector<int>& arr) {
     // Time complexity = O(N^2), Space complexity = O(1)
     int res = 0;
-
     // For every element of the array
     for (int i = 1; i < arr.size() - 1; i++) {
 
@@ -94,7 +90,6 @@ int main(){
 
     vector<int> height = {0,1,0,2,1,0,1,3,2,1,2,1};
     cout << "Using two pointer - " << maxWaterUsing2Pointer(height) << endl; // (BEST APPROACH) // o/p = 6
-
     /*
         Two pointer step:
             Initialize two pointers at both ends of the array
