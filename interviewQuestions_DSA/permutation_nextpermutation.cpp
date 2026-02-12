@@ -21,8 +21,8 @@ void nextPermutation(vector<int> &arr){
     
     int n = arr.size();
 
-    int idx = -1 ; // idx = largest value index
-     // find the largest value index, start from end
+    int idx = -1 ; // pivot index
+     // find the element from the right , that is greater than pivot
     for(int i = n -2 ; i >= 0 ; i--){
         if(arr[i] < arr[i+1]){
             idx = i;
@@ -45,7 +45,7 @@ void nextPermutation(vector<int> &arr){
         }
     }
 
-    // now we have the largest value index so will reverse the array from (idx + 1 to n - 1 ), so that will have a smallest value
+    // reverse the array from (idx + 1 to n - 1 ), so that will have a smallest value
     reverse(arr.begin() + idx + 1, arr.end());
     
 }
