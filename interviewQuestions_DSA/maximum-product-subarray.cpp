@@ -1,5 +1,8 @@
 #include <iostream>
 using namespace std;
+// https://www.geeksforgeeks.org/dsa/maximum-product-subarray/
+// https://leetcode.com/problems/maximum-product-subarray
+
 int maxproduct( vector<int> &arr , int n){
     // Time: O(n^2), Space: O(1)
     int ans = arr[0];
